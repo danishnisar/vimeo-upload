@@ -12,9 +12,12 @@
 		727C87F421035CDE0094F07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727C87F221035CDE0094F07D /* Main.storyboard */; };
 		727C87F621035CF60094F07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727C87F521035CF60094F07D /* Assets.xcassets */; };
 		727C87F921035CF60094F07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727C87F721035CF60094F07D /* LaunchScreen.storyboard */; };
+		ABBB40487A6C87C4E411BCED /* Pods_vimeo_upload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB1162ECAE067406D5709D5 /* Pods_vimeo_upload.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DFDE52A8ABE2AE0AF21D487 /* Pods-vimeo upload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vimeo upload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vimeo upload/Pods-vimeo upload.debug.xcconfig"; sourceTree = "<group>"; };
+		5D20BC010F528AE92BEFF68F /* Pods-vimeo upload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vimeo upload.release.xcconfig"; path = "Pods/Target Support Files/Pods-vimeo upload/Pods-vimeo upload.release.xcconfig"; sourceTree = "<group>"; };
 		727C87EB21035CDE0094F07D /* vimeo upload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vimeo upload.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		727C87EE21035CDE0094F07D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		727C87F021035CDE0094F07D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		727C87F521035CF60094F07D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727C87F821035CF60094F07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		727C87FA21035CF60094F07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB1162ECAE067406D5709D5 /* Pods_vimeo_upload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vimeo_upload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABBB40487A6C87C4E411BCED /* Pods_vimeo_upload.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				727C87ED21035CDE0094F07D /* vimeo upload */,
 				727C87EC21035CDE0094F07D /* Products */,
+				EBAEDCA98A2A09F97FD51FD9 /* Pods */,
+				9A90E9F9C798A614E4283B33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "vimeo upload";
 			sourceTree = "<group>";
 		};
+		9A90E9F9C798A614E4283B33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB1162ECAE067406D5709D5 /* Pods_vimeo_upload.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBAEDCA98A2A09F97FD51FD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DFDE52A8ABE2AE0AF21D487 /* Pods-vimeo upload.debug.xcconfig */,
+				5D20BC010F528AE92BEFF68F /* Pods-vimeo upload.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 727C87FD21035CF60094F07D /* Build configuration list for PBXNativeTarget "vimeo upload" */;
 			buildPhases = (
+				3A4B8BA5C6CD38E726567A76 /* [CP] Check Pods Manifest.lock */,
 				727C87E721035CDD0094F07D /* Sources */,
 				727C87E821035CDD0094F07D /* Frameworks */,
 				727C87E921035CDD0094F07D /* Resources */,
+				79E2BAEE7568739C77EB93AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A4B8BA5C6CD38E726567A76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vimeo upload-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E2BAEE7568739C77EB93AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-vimeo upload/Pods-vimeo upload-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vimeo upload/Pods-vimeo upload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		727C87E721035CDD0094F07D /* Sources */ = {
@@ -278,11 +345,13 @@
 		};
 		727C87FE21035CF60094F07D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DFDE52A8ABE2AE0AF21D487 /* Pods-vimeo upload.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6L6HHJ7A3;
 				INFOPLIST_FILE = "vimeo upload/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,17 +359,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nativebrains.vimeo-upload";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		727C87FF21035CF60094F07D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D20BC010F528AE92BEFF68F /* Pods-vimeo upload.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6L6HHJ7A3;
 				INFOPLIST_FILE = "vimeo upload/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nativebrains.vimeo-upload";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
